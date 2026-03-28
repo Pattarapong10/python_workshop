@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './views/Home.jsx'
-import Bmi from './views/Bmi'
+import Home from './views/Hone.jsx'
+import Bmi from './views/Bmi.jsx'
 import Bmr from './views/Bmr.jsx'
-import Car from './views/Car'
+import Car from './views/Car.jsx'
 
 export default function App() {
   return (
