@@ -1,0 +1,12 @@
+CREATE TABLE CUSTOMER_6612M100013
+( Customer_ID char(5) NOT NULL UNIQUE,
+  Customer_Name varchar(25),Customer_Address varchar(100)
+  PRIMARY KEY(Customer_ID))
+  CREATE TABLE ORDERS_6612M10013
+( Order_ID char(5) NOT NULL UNIQUE,
+	 Order_Date Datetime NOT NULL UNIQUE,
+	Customer_ID char(5)
+	PRIMARY KEY(Order_ID),
+	FOREIGN KEY(Customer_ID) REFERENCES CUSTOMER_6612M100013(Customer_ID)
+     ON DELETE NO ACTION
+	 ON UPDATE CASCADE)
